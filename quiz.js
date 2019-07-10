@@ -38,9 +38,36 @@ isMyAgeAndExpEnough(35,1)
 */
 
 
+function isMyAgeAndExpEnough (age, ex)
+{
+	if (age >= 25 && age < 30 && ex >= 5)
+		return "you are awesome";
+
+	if (age >= 30 && ex >= 5)
+		return "you are goood";
+
+	if(age >= 25 && ex < 5 && ex > 2)
+		return "dont worry you need to work on your self more ";
+
+	if (age <= 24)
+		return "you still young";
+
+	if (ex <= 2)
+		return "you need more exp";
+}
+
+console.log(isMyAgeAndExpEnough(27,6));
+
+console.log(isMyAgeAndExpEnough(35,6));
+
+console.log(isMyAgeAndExpEnough(26,3));
+
+console.log(isMyAgeAndExpEnough(22,1));
+
+console.log(isMyAgeAndExpEnough(35,1));
 
 
-
+console.log("__________________________________");
 
 
 
@@ -67,7 +94,16 @@ countDown(7)
 
 */
 
+function countDown (n)
+{
+	if (n===0)
+		return "done";
+	return n + ", " + countDown(n-1)
+}
 
+console.log(countDown(5));
+console.log(countDown(2));
+console.log(countDown(7));
 
 
 
